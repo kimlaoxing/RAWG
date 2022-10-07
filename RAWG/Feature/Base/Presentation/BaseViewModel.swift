@@ -10,6 +10,8 @@ import Foundation
 protocol BaseViewModelOutput {
     func getGameList()
     func getTrailer(with id: String)
+    func viewDidLoad()
+    func goToDetail(id: String)
 }
 
 protocol BaseViewModelInput {
@@ -26,8 +28,15 @@ final class DefaultBaseViewModel: BaseViewModel {
     let gameTrailer: Observable<[GameTrailer.Result]> = Observable([])
     let state: Observable<BaseViewState> = Observable(.loading)
     private let useCase = BaseUseCase()
+    private let router: Routes
     
-    init() {
+    typealias Routes = DetailGameRoute
+    
+    init(router: Routes) {
+        self.router = router
+    }
+    
+    internal func viewDidLoad() {
         self.getGameList()
         self.getTrailer(with: "3498")
     }
@@ -49,5 +58,9 @@ final class DefaultBaseViewModel: BaseViewModel {
             self.state.value = .normal
             self.gameTrailer.value = data
         }
+    }
+    
+    internal func goToDetail(id: String) {
+        self.router.toDetailGame(id: id)
     }
 }

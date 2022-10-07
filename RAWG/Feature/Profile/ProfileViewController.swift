@@ -10,7 +10,7 @@ import UIKit
 
 final class ProfileViewController: UIViewController {
     
-    private var viewModel: ProfileViewViewModel = DefaultProfileViewViewModel()
+    var viewModel: ProfileViewViewModel?
     private var contentView = ProfileViewHeader()
     private var imagePicker = UIImagePickerController()
     
@@ -22,7 +22,7 @@ final class ProfileViewController: UIViewController {
         super.viewDidLoad()
         subViews()
         bind()
-        viewModel.viewDidLoad()
+        viewModel?.viewDidLoad()
     }
     
     private func subViews() {
@@ -38,19 +38,19 @@ final class ProfileViewController: UIViewController {
     }
     
     private func bind() {
-        self.viewModel.email.observe(on: self) { [weak self] data in
+        self.viewModel?.email.observe(on: self) { [weak self] data in
             self?.setContentMail(with: data)
         }
         
-        self.viewModel.name.observe(on: self) { [weak self] data in
+        self.viewModel?.name.observe(on: self) { [weak self] data in
             self?.setContentName(with: data)
         }
         
-        self.viewModel.state.observe(on: self) { [weak self] data in
+        self.viewModel?.state.observe(on: self) { [weak self] data in
             self?.handleState(with: data)
         }
         
-        self.viewModel.image.observe(on: self) { [weak self] data in
+        self.viewModel?.image.observe(on: self) { [weak self] data in
             self?.setContentProfile(with: data)
         }
     }
@@ -92,11 +92,11 @@ final class ProfileViewController: UIViewController {
     
     private func configureButton() {
         contentView.selectCallBackEditName = {
-            self.editName()
+            self.viewModel?.toEditName(with: self)
         }
         
         contentView.selectCallBackEditEmail = {
-            self.editEmail()
+            self.viewModel?.toEditEmail(with: self)
         }
         
         contentView.selectCallBackEditPhoto = {
@@ -133,31 +133,15 @@ final class ProfileViewController: UIViewController {
         changePictureActionSheet.addAction(cameraAction)
         self.present(changePictureActionSheet, animated: true, completion: nil)
     }
-    
-    private func editName() {
-        let vc = ProfileEditViewController()
-        vc.state = .name
-        vc.delegate = self
-        vc.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    private func editEmail() {
-        let vc = ProfileEditViewController()
-        vc.state = .email
-        vc.delegate = self
-        vc.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
 }
 
 extension ProfileViewController: ProfileEditDelegate {
     func getEmail() {
-        self.viewModel.retriveEmail(with: ProfileEditForkey.email)
+        self.viewModel?.retriveEmail(with: ProfileEditForkey.email)
     }
     
     func getName() {
-        self.viewModel.retriveName(with: ProfileEditForkey.name)
+        self.viewModel?.retriveName(with: ProfileEditForkey.name)
     }
 }
 
@@ -165,9 +149,9 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.editedImage] as? UIImage {
-            viewModel.saveImage(with: pickedImage)
+            viewModel?.saveImage(with: pickedImage)
             picker.dismiss(animated: true, completion: nil)
-            viewModel.retriveImage()
+            viewModel?.retriveImage()
         }
     }
 }

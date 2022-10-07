@@ -10,9 +10,9 @@ import Declayout
 final class BaseViewController: UIViewController {
     
     private var gameResult: [GameResponse.GameResult]?
-    private var gameTrailers: [GameTrailer.Result]?
-    private var viewModel: BaseViewModel = DefaultBaseViewModel()
+    private var gameTrailers: [GameTrailer.Result]?    
     private var videoEnum: VideoEnum?
+    var viewModel: BaseViewModel?
     
     private var verticalCollectionHeight: NSLayoutConstraint? {
         didSet { verticalCollectionHeight?.activated() }
@@ -38,6 +38,7 @@ final class BaseViewController: UIViewController {
         super.viewDidLoad()
         subViews()
         bind()
+        viewModel?.viewDidLoad()
         verticalCollectionConfigure()
         caroucellCollectionConfigure()
     }
@@ -90,19 +91,19 @@ final class BaseViewController: UIViewController {
     }
     
     private func bind() {
-        viewModel.gameList.observe(on: self) { [weak self] data in
+        viewModel?.gameList.observe(on: self) { [weak self] data in
             guard let self = self else { return }
             self.gameResult = data
             self.verticalCollection.reloadData()
             self.updateCollectionViewHeights()
         }
         
-        viewModel.state.observe(on: self) { [weak self] data in
+        viewModel?.state.observe(on: self) { [weak self] data in
             guard let self = self else { return }
             self.handleState(with: data)
         }
         
-        viewModel.gameTrailer.observe(on: self) { [weak self] data in
+        viewModel?.gameTrailer.observe(on: self) { [weak self] data in
             guard let self = self else { return }
             self.gameTrailers = data
             self.caroucellCollection.reloadData()
@@ -125,11 +126,7 @@ final class BaseViewController: UIViewController {
     
     private func goToDetailGame(with indexPath: IndexPath) {
         let id = "\(self.gameResult?[indexPath.row].id ?? 0)"
-        let vm = DefaultDetailGameViewModel(id: id)
-        let vc = DetailGameViewController()
-        vc.viewModel = vm
-        vc.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(vc, animated: true)
+        viewModel?.goToDetail(id: id)
     }
     
     private func updateCollectionViewHeights() {

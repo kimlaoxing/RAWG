@@ -53,8 +53,22 @@
 		EA82DF8728EE7FFD00A1FEFC /* GameTrailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF8628EE7FFD00A1FEFC /* GameTrailer.swift */; };
 		EA82DF8928EE891F00A1FEFC /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF8828EE891F00A1FEFC /* PlayerView.swift */; };
 		EA82DF8B28EEDEAB00A1FEFC /* VideoEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF8A28EEDEAB00A1FEFC /* VideoEnum.swift */; };
-		EA82DFB428EEF1B000A1FEFC /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DFB328EEF1B000A1FEFC /* Flow.swift */; };
 		EA82DFB628EEF38B00A1FEFC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DFB528EEF38B00A1FEFC /* UINavigationController.swift */; };
+		EAA3B1A228F7D12F00625535 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1A128F7D12F00625535 /* Router.swift */; };
+		EAA3B1A528F7D16100625535 /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1A428F7D16100625535 /* AnimatedTransitioning.swift */; };
+		EAA3B1A728F7D17900625535 /* FadeAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1A628F7D17900625535 /* FadeAnimatedTransitioning.swift */; };
+		EAA3B1AC28F7D1BC00625535 /* AnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1AB28F7D1BC00625535 /* AnimatedTransition.swift */; };
+		EAA3B1AE28F7D1D200625535 /* EmptyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1AD28F7D1D200625535 /* EmptyTransition.swift */; };
+		EAA3B1B028F7D1DC00625535 /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1AF28F7D1DC00625535 /* ModalTransition.swift */; };
+		EAA3B1B228F7D1E800625535 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1B128F7D1E800625535 /* PushTransition.swift */; };
+		EAA3B1B428F7D1F200625535 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1B328F7D1F200625535 /* Transition.swift */; };
+		EAA3B1B728F7D25900625535 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1B628F7D25900625535 /* UITabBarController.swift */; };
+		EAA3B1B928F7DAC900625535 /* DefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1B828F7DAC900625535 /* DefaultRouter.swift */; };
+		EAA3B1BB28F7DCBE00625535 /* HomeTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1BA28F7DCBE00625535 /* HomeTabRoute.swift */; };
+		EAA3B1BD28F7E0EC00625535 /* FavoriteTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1BC28F7E0EC00625535 /* FavoriteTabRoute.swift */; };
+		EAA3B1BF28F7E26E00625535 /* ProfileTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1BE28F7E26E00625535 /* ProfileTabRoute.swift */; };
+		EAA3B1CC28F7F34A00625535 /* EditProfileRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1CB28F7F34A00625535 /* EditProfileRoute.swift */; };
+		EAA3B1D128F7FB0600625535 /* DetailGameRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1D028F7FB0600625535 /* DetailGameRoute.swift */; };
 		EAC6560428DD5C2300177037 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6560328DD5C2200177037 /* UIImageView.swift */; };
 		EAC6560628DD648A00177037 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6560528DD648A00177037 /* UIView.swift */; };
 		EAC6560A28DD668800177037 /* UICollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6560928DD668800177037 /* UICollectionViewDelegateFlowLayout.swift */; };
@@ -65,7 +79,6 @@
 		EAC6564028DD7E7E00177037 /* DetailGameUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6563F28DD7E7E00177037 /* DetailGameUseCase.swift */; };
 		EAC6564228DD7F5500177037 /* DetailGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6564128DD7F5500177037 /* DetailGameViewModel.swift */; };
 		EAC6564428DD828300177037 /* DetailGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6564328DD828300177037 /* DetailGameViewController.swift */; };
-		EAC6564828DD93FF00177037 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6564728DD93FF00177037 /* UITabBarController.swift */; };
 		EAC6564A28DD988800177037 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6564928DD988800177037 /* ProfileViewController.swift */; };
 		EAC6564E28DDBCEE00177037 /* RAWG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAC6564C28DDBCEE00177037 /* RAWG.xcdatamodeld */; };
 		EAC6565028DDBFB600177037 /* BaseLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6564F28DDBFB600177037 /* BaseLocalData.swift */; };
@@ -122,8 +135,22 @@
 		EA82DF8628EE7FFD00A1FEFC /* GameTrailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTrailer.swift; sourceTree = "<group>"; };
 		EA82DF8828EE891F00A1FEFC /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		EA82DF8A28EEDEAB00A1FEFC /* VideoEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEnum.swift; sourceTree = "<group>"; };
-		EA82DFB328EEF1B000A1FEFC /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
 		EA82DFB528EEF38B00A1FEFC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
+		EAA3B1A128F7D12F00625535 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EAA3B1A428F7D16100625535 /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
+		EAA3B1A628F7D17900625535 /* FadeAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		EAA3B1AB28F7D1BC00625535 /* AnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransition.swift; sourceTree = "<group>"; };
+		EAA3B1AD28F7D1D200625535 /* EmptyTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTransition.swift; sourceTree = "<group>"; };
+		EAA3B1AF28F7D1DC00625535 /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
+		EAA3B1B128F7D1E800625535 /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
+		EAA3B1B328F7D1F200625535 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		EAA3B1B628F7D25900625535 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
+		EAA3B1B828F7DAC900625535 /* DefaultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRouter.swift; sourceTree = "<group>"; };
+		EAA3B1BA28F7DCBE00625535 /* HomeTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabRoute.swift; sourceTree = "<group>"; };
+		EAA3B1BC28F7E0EC00625535 /* FavoriteTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTabRoute.swift; sourceTree = "<group>"; };
+		EAA3B1BE28F7E26E00625535 /* ProfileTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabRoute.swift; sourceTree = "<group>"; };
+		EAA3B1CB28F7F34A00625535 /* EditProfileRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRoute.swift; sourceTree = "<group>"; };
+		EAA3B1D028F7FB0600625535 /* DetailGameRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameRoute.swift; sourceTree = "<group>"; };
 		EAC6560328DD5C2200177037 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		EAC6560528DD648A00177037 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		EAC6560928DD668800177037 /* UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewDelegateFlowLayout.swift; sourceTree = "<group>"; };
@@ -134,7 +161,6 @@
 		EAC6563F28DD7E7E00177037 /* DetailGameUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameUseCase.swift; sourceTree = "<group>"; };
 		EAC6564128DD7F5500177037 /* DetailGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewModel.swift; sourceTree = "<group>"; };
 		EAC6564328DD828300177037 /* DetailGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameViewController.swift; sourceTree = "<group>"; };
-		EAC6564728DD93FF00177037 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
 		EAC6564928DD988800177037 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EAC6564D28DDBCEE00177037 /* RAWG.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RAWG.xcdatamodel; sourceTree = "<group>"; };
 		EAC6564F28DDBFB600177037 /* BaseLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocalData.swift; sourceTree = "<group>"; };
@@ -181,6 +207,8 @@
 		6AB8FA6E28D069EC005DBB85 /* RAWG */ = {
 			isa = PBXGroup;
 			children = (
+				EAA3B1B528F7D24700625535 /* TabBar */,
+				EAA3B1A028F7D12900625535 /* Router */,
 				EA73518028E2F2240000D4A2 /* Constant */,
 				EA73517B28E2F1F50000D4A2 /* Persistance */,
 				EA25A9BA28E1A005003E7846 /* Feature */,
@@ -247,8 +275,6 @@
 			children = (
 				6AB8FA6F28D069EC005DBB85 /* AppDelegate.swift */,
 				6AB8FA7128D069EC005DBB85 /* SceneDelegate.swift */,
-				EAC6564728DD93FF00177037 /* UITabBarController.swift */,
-				EA82DFB328EEF1B000A1FEFC /* Flow.swift */,
 			);
 			path = Delegate;
 			sourceTree = "<group>";
@@ -381,6 +407,7 @@
 		EA73516728E2CBB30000D4A2 /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
+				EAA3B1CA28F7F34000625535 /* Route */,
 				EA73517028E2EE1C0000D4A2 /* Domain */,
 				EA73516F28E2EE160000D4A2 /* Presentation */,
 				EA73516E28E2EE0B0000D4A2 /* Data */,
@@ -469,6 +496,65 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EAA3B1A028F7D12900625535 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EAA3B1AA28F7D1AE00625535 /* Transitions */,
+				EAA3B1A328F7D15C00625535 /* Animator */,
+				EAA3B1A128F7D12F00625535 /* Router.swift */,
+				EAA3B1B828F7DAC900625535 /* DefaultRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EAA3B1A328F7D15C00625535 /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				EAA3B1A428F7D16100625535 /* AnimatedTransitioning.swift */,
+				EAA3B1A628F7D17900625535 /* FadeAnimatedTransitioning.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		EAA3B1AA28F7D1AE00625535 /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				EAA3B1AB28F7D1BC00625535 /* AnimatedTransition.swift */,
+				EAA3B1AD28F7D1D200625535 /* EmptyTransition.swift */,
+				EAA3B1AF28F7D1DC00625535 /* ModalTransition.swift */,
+				EAA3B1B128F7D1E800625535 /* PushTransition.swift */,
+				EAA3B1B328F7D1F200625535 /* Transition.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		EAA3B1B528F7D24700625535 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EAA3B1B628F7D25900625535 /* UITabBarController.swift */,
+				EAA3B1BA28F7DCBE00625535 /* HomeTabRoute.swift */,
+				EAA3B1BC28F7E0EC00625535 /* FavoriteTabRoute.swift */,
+				EAA3B1BE28F7E26E00625535 /* ProfileTabRoute.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EAA3B1CA28F7F34000625535 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				EAA3B1CB28F7F34A00625535 /* EditProfileRoute.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		EAA3B1CD28F7FAEF00625535 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				EAA3B1D028F7FB0600625535 /* DetailGameRoute.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
 		EAC6560228DD5C1A00177037 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,6 +572,7 @@
 		EAC6563628DD71BE00177037 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				EAA3B1CD28F7FAEF00625535 /* Route */,
 				EAC6563E28DD73D800177037 /* Presentation */,
 				EAC6563D28DD73D400177037 /* Domain */,
 				EAC6563C28DD73CD00177037 /* Data */,
@@ -659,14 +746,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAA3B1D128F7FB0600625535 /* DetailGameRoute.swift in Sources */,
+				EAA3B1BB28F7DCBE00625535 /* HomeTabRoute.swift in Sources */,
 				EA73518428E2F4D70000D4A2 /* ProfileEditForkey.swift in Sources */,
+				EAA3B1AC28F7D1BC00625535 /* AnimatedTransition.swift in Sources */,
 				EA4CE2EF28E014A000DD198E /* FavoriteListViewController.swift in Sources */,
 				EA25A9B428E16DA4003E7846 /* ScrollViewContainer.swift in Sources */,
 				EAC6560628DD648A00177037 /* UIView.swift in Sources */,
 				EA73519028E598890000D4A2 /* ProfileViewForKey.swift in Sources */,
 				EA73518728E2F6080000D4A2 /* ProfileViewDomain.swift in Sources */,
+				EAA3B1B728F7D25900625535 /* UITabBarController.swift in Sources */,
+				EAA3B1BF28F7E26E00625535 /* ProfileTabRoute.swift in Sources */,
 				EA25A9B628E16DE1003E7846 /* DetailGameView.swift in Sources */,
-				EAC6564828DD93FF00177037 /* UITabBarController.swift in Sources */,
+				EAA3B1A528F7D16100625535 /* AnimatedTransitioning.swift in Sources */,
 				EA73517828E2F0130000D4A2 /* ProfileEditDomain.swift in Sources */,
 				EA73517D28E2F20E0000D4A2 /* ScreenSize.swift in Sources */,
 				EAC6565028DDBFB600177037 /* BaseLocalData.swift in Sources */,
@@ -679,23 +771,30 @@
 				EA82DF8728EE7FFD00A1FEFC /* GameTrailer.swift in Sources */,
 				6ACA136A28D1AD4100D71744 /* EmptyView.swift in Sources */,
 				EA73518E28E318A20000D4A2 /* ProfileEditState.swift in Sources */,
+				EAA3B1CC28F7F34A00625535 /* EditProfileRoute.swift in Sources */,
+				EAA3B1B228F7D1E800625535 /* PushTransition.swift in Sources */,
+				EAA3B1AE28F7D1D200625535 /* EmptyTransition.swift in Sources */,
 				EA73515E28E2B2570000D4A2 /* ProfileViewHeader.swift in Sources */,
 				EA82DFB628EEF38B00A1FEFC /* UINavigationController.swift in Sources */,
 				EA73518228E2F3530000D4A2 /* ProfileEditViewModel.swift in Sources */,
 				EA82DF7F28EE73A300A1FEFC /* SafeAreaInset.swift in Sources */,
 				EA73517628E2EE490000D4A2 /* ProfileEditLocalData.swift in Sources */,
+				EAA3B1A228F7D12F00625535 /* Router.swift in Sources */,
+				EAA3B1BD28F7E0EC00625535 /* FavoriteTabRoute.swift in Sources */,
 				EA0FF1D828E82E8C004FF80B /* DefaultCollectionView.swift in Sources */,
 				EAC6564A28DD988800177037 /* ProfileViewController.swift in Sources */,
 				EAC6564228DD7F5500177037 /* DetailGameViewModel.swift in Sources */,
 				6AB8FA9628D07AFC005DBB85 /* BaseDomain.swift in Sources */,
 				6ACA136C28D1B22C00D71744 /* GameResponse.swift in Sources */,
 				EA4CE2F828E0175C00DD198E /* FavoriteTableViewCell.swift in Sources */,
+				EAA3B1B928F7DAC900625535 /* DefaultRouter.swift in Sources */,
 				EAC6563828DD71C700177037 /* GameDetailResponse.swift in Sources */,
+				EAA3B1B028F7D1DC00625535 /* ModalTransition.swift in Sources */,
+				EAA3B1B428F7D1F200625535 /* Transition.swift in Sources */,
 				EA82DF8528EE772E00A1FEFC /* FavoriteModel.swift in Sources */,
 				EA82DF8B28EEDEAB00A1FEFC /* VideoEnum.swift in Sources */,
 				6AB8FA9A28D07B09005DBB85 /* BaseRemoteData.swift in Sources */,
 				EA73517A28E2F0550000D4A2 /* ProfileEditRepository.swift in Sources */,
-				EA82DFB428EEF1B000A1FEFC /* Flow.swift in Sources */,
 				EA73516928E2CBBD0000D4A2 /* ProfileEditViewController.swift in Sources */,
 				EA82DF8128EE766E00A1FEFC /* SWInflateLayout.swift in Sources */,
 				EA82DF8928EE891F00A1FEFC /* PlayerView.swift in Sources */,
@@ -712,6 +811,7 @@
 				EA73518C28E3188B0000D4A2 /* ProfileEditDelegate.swift in Sources */,
 				EA4CE2F228E014B000DD198E /* FavoriteListViewModel.swift in Sources */,
 				EAC6564E28DDBCEE00177037 /* RAWG.xcdatamodeld in Sources */,
+				EAA3B1A728F7D17900625535 /* FadeAnimatedTransitioning.swift in Sources */,
 				6AB8FA9228D07ACF005DBB85 /* GameListHomeCollectionViewCell.swift in Sources */,
 				EA25A9BF28E1A543003E7846 /* DetailGameButtonMode.swift in Sources */,
 				EA82DF7D28EE730E00A1FEFC /* NSLayoutConstraint.swift in Sources */,

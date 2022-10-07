@@ -14,6 +14,8 @@ protocol ProfileViewInput {
     func saveImage(with image: UIImage)
     func retriveImage()
     func viewDidLoad()
+    func toEditName(with delegate: ProfileEditDelegate)
+    func toEditEmail(with delegate: ProfileEditDelegate)
 }
 
 protocol ProfileViewOutput {
@@ -33,6 +35,13 @@ final class DefaultProfileViewViewModel: ProfileViewViewModel {
     let state: Observable<BaseViewState> = Observable(.loading)
     
     private let useCase = ProfileViewUseCase()
+    private let router: Routes
+    
+    typealias Routes = EditProfileRoute
+    
+    init(router: Routes) {
+        self.router = router
+    }
     
     func viewDidLoad() {
         self.retriveImage()
@@ -70,5 +79,13 @@ final class DefaultProfileViewViewModel: ProfileViewViewModel {
                 self.image.value = data
             }
         }
+    }
+    
+    func toEditName(with delegate: ProfileEditDelegate) {
+        self.router.toEditName(delegate)
+    }
+    
+    func toEditEmail(with delegate: ProfileEditDelegate) {
+        self.router.toEditEmail(delegate)
     }
 }

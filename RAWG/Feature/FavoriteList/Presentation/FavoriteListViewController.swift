@@ -10,7 +10,7 @@ import UIKit
 
 final class FavoriteListViewController: UIViewController {
     
-    private var viewModel: FavoriteListViewModel = DefaultFavoriteListViewModel()
+    var viewModel: FavoriteListViewModel?
     
     private lazy var emptyView = EmptyDataView.make {
         $0.center(to: view)
@@ -39,7 +39,7 @@ final class FavoriteListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        viewModel.getListFavorite()
+        viewModel?.getListFavorite()
     }
     
     private func subViews() {
@@ -49,7 +49,7 @@ final class FavoriteListViewController: UIViewController {
     }
     
     private func bind() {
-        viewModel.gameListFavorite.observe(on: self) { [weak self] data in
+        viewModel?.gameListFavorite.observe(on: self) { [weak self] data in
             guard let self = self else { return }
             self.tableView.reloadData()
             if data?.count == 0 {
@@ -57,7 +57,7 @@ final class FavoriteListViewController: UIViewController {
             }
         }
         
-        viewModel.state.observe(on: self) { [weak self] data in
+        viewModel?.state.observe(on: self) { [weak self] data in
             self?.handleState(with: data)
         }
     }
@@ -77,38 +77,34 @@ final class FavoriteListViewController: UIViewController {
     }
     
     private func goToDetailGame(with indexPath: IndexPath) {
-        let data = viewModel.gameListFavorite.value
+        let data = viewModel?.gameListFavorite.value
         let id = "\(data?[indexPath.row].id ?? 0)"
-        let vm = DefaultDetailGameViewModel(id: id)
-        let vc = DetailGameViewController()
-        vc.viewModel = vm
-        vc.hidesBottomBarWhenPushed = true
-        self.navigationController?.pushViewController(vc, animated: true)
+        viewModel?.toDetailGame(with: id)
     }
 }
 
 extension FavoriteListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.gameListFavorite.value?.count ?? 0
+        return viewModel?.gameListFavorite.value?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteTableViewCell",
                                                  for: indexPath) as! FavoriteTableViewCell
-        if let data = viewModel.gameListFavorite.value?[indexPath.row] {
+        if let data = viewModel?.gameListFavorite.value?[indexPath.row] {
             cell.setContent(with: data)
         }
         return cell
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        let data = viewModel.gameListFavorite.value
+        let data = viewModel?.gameListFavorite.value
         guard let id = data?[indexPath.row].id else { return }
         if editingStyle == .delete {
             tableView.beginUpdates()
-            self.viewModel.gameListFavorite.value?.remove(at: indexPath.row)
-            self.viewModel.deleteGame(with: Int(id))
+            self.viewModel?.gameListFavorite.value?.remove(at: indexPath.row)
+            self.viewModel?.deleteGame(with: Int(id))
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.endUpdates()
         }
