@@ -27,7 +27,7 @@ final class FavoriteListViewController: UIViewController {
         $0.edges(to: view)
         $0.delegate = self
         $0.dataSource = self
-        $0.register(UINib(nibName: "FavoriteTableViewCell", bundle: nil), forCellReuseIdentifier: "FavoriteTableViewCell")
+        $0.register(FavoriteTableViewCell.self, forCellReuseIdentifier: "FavoriteTableViewCell")
         $0.allowsMultipleSelectionDuringEditing = false
     }
     

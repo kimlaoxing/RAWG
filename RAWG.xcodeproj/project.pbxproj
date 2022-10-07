@@ -30,7 +30,6 @@
 		EA4CE2F228E014B000DD198E /* FavoriteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CE2F128E014B000DD198E /* FavoriteListViewModel.swift */; };
 		EA4CE2F428E014B700DD198E /* FavoriteListDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CE2F328E014B700DD198E /* FavoriteListDomain.swift */; };
 		EA4CE2F828E0175C00DD198E /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CE2F628E0175C00DD198E /* FavoriteTableViewCell.swift */; };
-		EA4CE2F928E0175C00DD198E /* FavoriteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA4CE2F728E0175C00DD198E /* FavoriteTableViewCell.xib */; };
 		EA73515E28E2B2570000D4A2 /* ProfileViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73515D28E2B2570000D4A2 /* ProfileViewHeader.swift */; };
 		EA73516628E2C2BF0000D4A2 /* TwoLabelInHorizontalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73516528E2C2BF0000D4A2 /* TwoLabelInHorizontalStack.swift */; };
 		EA73516928E2CBBD0000D4A2 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73516828E2CBBD0000D4A2 /* ProfileEditViewController.swift */; };
@@ -100,7 +99,6 @@
 		EA4CE2F128E014B000DD198E /* FavoriteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewModel.swift; sourceTree = "<group>"; };
 		EA4CE2F328E014B700DD198E /* FavoriteListDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListDomain.swift; sourceTree = "<group>"; };
 		EA4CE2F628E0175C00DD198E /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
-		EA4CE2F728E0175C00DD198E /* FavoriteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteTableViewCell.xib; sourceTree = "<group>"; };
 		EA73515D28E2B2570000D4A2 /* ProfileViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewHeader.swift; sourceTree = "<group>"; };
 		EA73516528E2C2BF0000D4A2 /* TwoLabelInHorizontalStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLabelInHorizontalStack.swift; sourceTree = "<group>"; };
 		EA73516828E2CBBD0000D4A2 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
@@ -360,7 +358,6 @@
 			isa = PBXGroup;
 			children = (
 				EA4CE2F628E0175C00DD198E /* FavoriteTableViewCell.swift */,
-				EA4CE2F728E0175C00DD198E /* FavoriteTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -593,7 +590,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AB8FA7C28D069ED005DBB85 /* LaunchScreen.storyboard in Resources */,
-				EA4CE2F928E0175C00DD198E /* FavoriteTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
