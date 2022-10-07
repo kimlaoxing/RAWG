@@ -1,4 +1,7 @@
 How to start:
-
-open terminal
+Open terminal
 "pod install"
+
+
+Architecture:
+MVVM + Cleancode
