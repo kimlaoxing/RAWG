@@ -26,6 +26,7 @@
 		EA25A9B428E16DA4003E7846 /* ScrollViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25A9B328E16DA4003E7846 /* ScrollViewContainer.swift */; };
 		EA25A9B628E16DE1003E7846 /* DetailGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25A9B528E16DE1003E7846 /* DetailGameView.swift */; };
 		EA25A9BF28E1A543003E7846 /* DetailGameButtonMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25A9BE28E1A543003E7846 /* DetailGameButtonMode.swift */; };
+		EA318A5E28F80D29007097C1 /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA318A5D28F80D29007097C1 /* SceneDelegateExtension.swift */; };
 		EA4CE2EF28E014A000DD198E /* FavoriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CE2EE28E014A000DD198E /* FavoriteListViewController.swift */; };
 		EA4CE2F228E014B000DD198E /* FavoriteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CE2F128E014B000DD198E /* FavoriteListViewModel.swift */; };
 		EA4CE2F428E014B700DD198E /* FavoriteListDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CE2F328E014B700DD198E /* FavoriteListDomain.swift */; };
@@ -107,6 +108,7 @@
 		EA25A9B328E16DA4003E7846 /* ScrollViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewContainer.swift; sourceTree = "<group>"; };
 		EA25A9B528E16DE1003E7846 /* DetailGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameView.swift; sourceTree = "<group>"; };
 		EA25A9BE28E1A543003E7846 /* DetailGameButtonMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameButtonMode.swift; sourceTree = "<group>"; };
+		EA318A5D28F80D29007097C1 /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
 		EA4CE2EE28E014A000DD198E /* FavoriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewController.swift; sourceTree = "<group>"; };
 		EA4CE2F128E014B000DD198E /* FavoriteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewModel.swift; sourceTree = "<group>"; };
 		EA4CE2F328E014B700DD198E /* FavoriteListDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListDomain.swift; sourceTree = "<group>"; };
@@ -562,6 +564,7 @@
 				EAC6560D28DD6BF700177037 /* UIViewController.swift */,
 				EA82DF7A28EE72F800A1FEFC /* UICollectionView.swift */,
 				EA82DF7C28EE730E00A1FEFC /* NSLayoutConstraint.swift */,
+				EA318A5D28F80D29007097C1 /* SceneDelegateExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -810,6 +813,7 @@
 				EAA3B1A728F7D17900625535 /* FadeAnimatedTransitioning.swift in Sources */,
 				6AB8FA9228D07ACF005DBB85 /* GameListHomeCollectionViewCell.swift in Sources */,
 				EA25A9BF28E1A543003E7846 /* DetailGameButtonMode.swift in Sources */,
+				EA318A5E28F80D29007097C1 /* SceneDelegateExtension.swift in Sources */,
 				EA82DF7D28EE730E00A1FEFC /* NSLayoutConstraint.swift in Sources */,
 				EAC6564028DD7E7E00177037 /* DetailGameUseCase.swift in Sources */,
 				6AB8FAA628D17714005DBB85 /* Endpoint.swift in Sources */,
