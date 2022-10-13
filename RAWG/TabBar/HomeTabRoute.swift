@@ -18,6 +18,7 @@ extension HomeTabRoute where Self: Router {
         let vc = BaseViewController()
         let vm = DefaultBaseViewModel(router: router)
         vc.viewModel = vm
+        vc.navigationItem.backButtonTitle = ""
         router.root = vc
         
         let navigation = UINavigationController(rootViewController: vc)

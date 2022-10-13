@@ -18,6 +18,7 @@ extension ProfileTabRoute where Self: Router {
         let vc = ProfileViewController()
         let vm = DefaultProfileViewViewModel(router: router)
         vc.viewModel = vm
+        vc.navigationItem.backButtonTitle = ""
         router.root = vc
         
         let navigation = UINavigationController(rootViewController: vc)

@@ -17,6 +17,7 @@ extension FavoriteTabRoute where Self: Router {
         let router = DefaultRouter(rootTransition: ModalTransition())
         let vc = FavoriteListViewController()
         let vm = DefaultFavoriteListViewModel(router: router)
+        vc.navigationItem.backButtonTitle = ""
         vc.viewModel = vm
         router.root = vc
         
