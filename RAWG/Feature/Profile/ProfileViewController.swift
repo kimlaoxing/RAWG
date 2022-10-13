@@ -16,6 +16,9 @@ final class ProfileViewController: UIViewController {
     
     private lazy var scrollView = ScrollViewContainer.make {
         $0.setSpacingBetweenItems(to: 4)
+        $0.top(to: view, Padding.double + safeAreaInset.top + Padding.half)
+        $0.horizontalPadding(to: view)
+        $0.bottom(to: view)
     }
     
     override func viewDidLoad() {
@@ -33,7 +36,6 @@ final class ProfileViewController: UIViewController {
         scrollView.addArrangedSubViews([
             contentView
         ])
-        layout()
         configureButton()
     }
     
@@ -78,16 +80,6 @@ final class ProfileViewController: UIViewController {
     
     private func setContentProfile(with image: UIImage) {
         contentView.setContentProfile(with: image)
-    }
-    
-    private func layout() {
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: Padding.double + safeAreaInset.top + Padding.half),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
     }
     
     private func configureButton() {
