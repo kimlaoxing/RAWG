@@ -53,7 +53,6 @@
 		EA82DF8728EE7FFD00A1FEFC /* GameTrailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF8628EE7FFD00A1FEFC /* GameTrailer.swift */; };
 		EA82DF8928EE891F00A1FEFC /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF8828EE891F00A1FEFC /* PlayerView.swift */; };
 		EA82DF8B28EEDEAB00A1FEFC /* VideoEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF8A28EEDEAB00A1FEFC /* VideoEnum.swift */; };
-		EA82DFB628EEF38B00A1FEFC /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DFB528EEF38B00A1FEFC /* UINavigationController.swift */; };
 		EAA3B1A228F7D12F00625535 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1A128F7D12F00625535 /* Router.swift */; };
 		EAA3B1A528F7D16100625535 /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1A428F7D16100625535 /* AnimatedTransitioning.swift */; };
 		EAA3B1A728F7D17900625535 /* FadeAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1A628F7D17900625535 /* FadeAnimatedTransitioning.swift */; };
@@ -135,7 +134,6 @@
 		EA82DF8628EE7FFD00A1FEFC /* GameTrailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTrailer.swift; sourceTree = "<group>"; };
 		EA82DF8828EE891F00A1FEFC /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		EA82DF8A28EEDEAB00A1FEFC /* VideoEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEnum.swift; sourceTree = "<group>"; };
-		EA82DFB528EEF38B00A1FEFC /* UINavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		EAA3B1A128F7D12F00625535 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		EAA3B1A428F7D16100625535 /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
 		EAA3B1A628F7D17900625535 /* FadeAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimatedTransitioning.swift; sourceTree = "<group>"; };
@@ -564,7 +562,6 @@
 				EAC6560D28DD6BF700177037 /* UIViewController.swift */,
 				EA82DF7A28EE72F800A1FEFC /* UICollectionView.swift */,
 				EA82DF7C28EE730E00A1FEFC /* NSLayoutConstraint.swift */,
-				EA82DFB528EEF38B00A1FEFC /* UINavigationController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -775,7 +772,6 @@
 				EAA3B1B228F7D1E800625535 /* PushTransition.swift in Sources */,
 				EAA3B1AE28F7D1D200625535 /* EmptyTransition.swift in Sources */,
 				EA73515E28E2B2570000D4A2 /* ProfileViewHeader.swift in Sources */,
-				EA82DFB628EEF38B00A1FEFC /* UINavigationController.swift in Sources */,
 				EA73518228E2F3530000D4A2 /* ProfileEditViewModel.swift in Sources */,
 				EA82DF7F28EE73A300A1FEFC /* SafeAreaInset.swift in Sources */,
 				EA73517628E2EE490000D4A2 /* ProfileEditLocalData.swift in Sources */,
