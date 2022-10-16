@@ -13,10 +13,12 @@ public final class ModalTransition: NSObject {
     
     var modalTransitionStyle: UIModalTransitionStyle
     var modalPresentationStyle: UIModalPresentationStyle
-
-    public init(isAnimated: Bool = true,
-         modalTransitionStyle: UIModalTransitionStyle = .coverVertical,
-         modalPresentationStyle: UIModalPresentationStyle = .automatic) {
+    
+    public init(
+        isAnimated: Bool = true,
+        modalTransitionStyle: UIModalTransitionStyle = .coverVertical,
+        modalPresentationStyle: UIModalPresentationStyle = .automatic
+    ) {
         self.isAnimated = isAnimated
         self.modalTransitionStyle = modalTransitionStyle
         self.modalPresentationStyle = modalPresentationStyle
@@ -25,13 +27,13 @@ public final class ModalTransition: NSObject {
 
 extension ModalTransition: Transition {
     // MARK: - Transition
-
+    
     public func open(_ viewController: UIViewController, from: UIViewController, completion: (() -> Void)?) {
         viewController.modalPresentationStyle = modalPresentationStyle
         viewController.modalTransitionStyle = modalTransitionStyle
         from.present(viewController, animated: isAnimated, completion: completion)
     }
-
+    
     public func close(_ viewController: UIViewController, completion: (() -> Void)?) {
         viewController.dismiss(animated: isAnimated, completion: completion)
     }

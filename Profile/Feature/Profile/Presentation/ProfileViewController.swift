@@ -139,7 +139,7 @@ extension ProfileViewController: ProfileEditDelegate {
 
 extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [ UIImagePickerController.InfoKey: Any ]) {
         if let pickedImage = info[.editedImage] as? UIImage {
             viewModel?.saveImage(with: pickedImage)
             picker.dismiss(animated: true, completion: nil)
