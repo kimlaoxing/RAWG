@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Router
 
 protocol DetailGameRoute {
     func toDetailGame(id: String)

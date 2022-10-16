@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Router
 
 protocol HomeTabRoute {
     func makeHomeTab() -> UIViewController

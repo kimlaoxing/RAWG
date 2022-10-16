@@ -27,25 +27,17 @@
 		EA25A9B628E16DE1003E7846 /* DetailGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25A9B528E16DE1003E7846 /* DetailGameView.swift */; };
 		EA25A9BF28E1A543003E7846 /* DetailGameButtonMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA25A9BE28E1A543003E7846 /* DetailGameButtonMode.swift */; };
 		EA318A5E28F80D29007097C1 /* SceneDelegateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA318A5D28F80D29007097C1 /* SceneDelegateExtension.swift */; };
+		EA428ABD28F947E3004D5961 /* Profile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA428ABC28F947E3004D5961 /* Profile.framework */; };
+		EA428ABE28F947E3004D5961 /* Profile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA428ABC28F947E3004D5961 /* Profile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EA428B1628FBB49A004D5961 /* Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA428B1528FBB49A004D5961 /* Router.framework */; };
+		EA428B1728FBB49A004D5961 /* Router.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA428B1528FBB49A004D5961 /* Router.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA4CE2EF28E014A000DD198E /* FavoriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CE2EE28E014A000DD198E /* FavoriteListViewController.swift */; };
 		EA4CE2F228E014B000DD198E /* FavoriteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CE2F128E014B000DD198E /* FavoriteListViewModel.swift */; };
 		EA4CE2F428E014B700DD198E /* FavoriteListDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CE2F328E014B700DD198E /* FavoriteListDomain.swift */; };
 		EA4CE2F828E0175C00DD198E /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4CE2F628E0175C00DD198E /* FavoriteTableViewCell.swift */; };
-		EA73515E28E2B2570000D4A2 /* ProfileViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73515D28E2B2570000D4A2 /* ProfileViewHeader.swift */; };
 		EA73516628E2C2BF0000D4A2 /* TwoLabelInHorizontalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73516528E2C2BF0000D4A2 /* TwoLabelInHorizontalStack.swift */; };
-		EA73516928E2CBBD0000D4A2 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73516828E2CBBD0000D4A2 /* ProfileEditViewController.swift */; };
-		EA73517628E2EE490000D4A2 /* ProfileEditLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73517528E2EE490000D4A2 /* ProfileEditLocalData.swift */; };
-		EA73517828E2F0130000D4A2 /* ProfileEditDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73517728E2F0130000D4A2 /* ProfileEditDomain.swift */; };
-		EA73517A28E2F0550000D4A2 /* ProfileEditRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73517928E2F0550000D4A2 /* ProfileEditRepository.swift */; };
 		EA73517D28E2F20E0000D4A2 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73517C28E2F20E0000D4A2 /* ScreenSize.swift */; };
 		EA73517F28E2F21D0000D4A2 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73517E28E2F21D0000D4A2 /* Padding.swift */; };
-		EA73518228E2F3530000D4A2 /* ProfileEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73518128E2F3530000D4A2 /* ProfileEditViewModel.swift */; };
-		EA73518428E2F4D70000D4A2 /* ProfileEditForkey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73518328E2F4D70000D4A2 /* ProfileEditForkey.swift */; };
-		EA73518728E2F6080000D4A2 /* ProfileViewDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73518628E2F6080000D4A2 /* ProfileViewDomain.swift */; };
-		EA73518A28E2F6520000D4A2 /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73518928E2F6520000D4A2 /* ProfileViewViewModel.swift */; };
-		EA73518C28E3188B0000D4A2 /* ProfileEditDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73518B28E3188B0000D4A2 /* ProfileEditDelegate.swift */; };
-		EA73518E28E318A20000D4A2 /* ProfileEditState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73518D28E318A20000D4A2 /* ProfileEditState.swift */; };
-		EA73519028E598890000D4A2 /* ProfileViewForKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA73518F28E598890000D4A2 /* ProfileViewForKey.swift */; };
 		EA82DF7B28EE72F800A1FEFC /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF7A28EE72F800A1FEFC /* UICollectionView.swift */; };
 		EA82DF7D28EE730E00A1FEFC /* NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF7C28EE730E00A1FEFC /* NSLayoutConstraint.swift */; };
 		EA82DF7F28EE73A300A1FEFC /* SafeAreaInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF7E28EE73A300A1FEFC /* SafeAreaInset.swift */; };
@@ -54,22 +46,10 @@
 		EA82DF8728EE7FFD00A1FEFC /* GameTrailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF8628EE7FFD00A1FEFC /* GameTrailer.swift */; };
 		EA82DF8928EE891F00A1FEFC /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF8828EE891F00A1FEFC /* PlayerView.swift */; };
 		EA82DF8B28EEDEAB00A1FEFC /* VideoEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA82DF8A28EEDEAB00A1FEFC /* VideoEnum.swift */; };
-		EAA3B1A228F7D12F00625535 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1A128F7D12F00625535 /* Router.swift */; };
-		EAA3B1A528F7D16100625535 /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1A428F7D16100625535 /* AnimatedTransitioning.swift */; };
-		EAA3B1A728F7D17900625535 /* FadeAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1A628F7D17900625535 /* FadeAnimatedTransitioning.swift */; };
-		EAA3B1AC28F7D1BC00625535 /* AnimatedTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1AB28F7D1BC00625535 /* AnimatedTransition.swift */; };
-		EAA3B1AE28F7D1D200625535 /* EmptyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1AD28F7D1D200625535 /* EmptyTransition.swift */; };
-		EAA3B1B028F7D1DC00625535 /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1AF28F7D1DC00625535 /* ModalTransition.swift */; };
-		EAA3B1B228F7D1E800625535 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1B128F7D1E800625535 /* PushTransition.swift */; };
-		EAA3B1B428F7D1F200625535 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1B328F7D1F200625535 /* Transition.swift */; };
 		EAA3B1B728F7D25900625535 /* UITabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1B628F7D25900625535 /* UITabBarController.swift */; };
-		EAA3B1B928F7DAC900625535 /* DefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1B828F7DAC900625535 /* DefaultRouter.swift */; };
 		EAA3B1BB28F7DCBE00625535 /* HomeTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1BA28F7DCBE00625535 /* HomeTabRoute.swift */; };
 		EAA3B1BD28F7E0EC00625535 /* FavoriteTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1BC28F7E0EC00625535 /* FavoriteTabRoute.swift */; };
-		EAA3B1BF28F7E26E00625535 /* ProfileTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1BE28F7E26E00625535 /* ProfileTabRoute.swift */; };
-		EAA3B1CC28F7F34A00625535 /* EditProfileRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1CB28F7F34A00625535 /* EditProfileRoute.swift */; };
 		EAA3B1D128F7FB0600625535 /* DetailGameRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1D028F7FB0600625535 /* DetailGameRoute.swift */; };
-		EAA3B1D328F807A600625535 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA3B1D228F807A600625535 /* ProfileViewController.swift */; };
 		EAC6560428DD5C2300177037 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6560328DD5C2200177037 /* UIImageView.swift */; };
 		EAC6560628DD648A00177037 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6560528DD648A00177037 /* UIView.swift */; };
 		EAC6560A28DD668800177037 /* UICollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6560928DD668800177037 /* UICollectionViewDelegateFlowLayout.swift */; };
@@ -83,6 +63,21 @@
 		EAC6564E28DDBCEE00177037 /* RAWG.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAC6564C28DDBCEE00177037 /* RAWG.xcdatamodeld */; };
 		EAC6565028DDBFB600177037 /* BaseLocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6564F28DDBFB600177037 /* BaseLocalData.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA428ABF28F947E3004D5961 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EA428ABE28F947E3004D5961 /* Profile.framework in Embed Frameworks */,
+				EA428B1728FBB49A004D5961 /* Router.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3D8723BF5CACB7EF2FF3E9F8 /* Pods-RAWG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAWG.release.xcconfig"; path = "Target Support Files/Pods-RAWG/Pods-RAWG.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,25 +104,15 @@
 		EA25A9B528E16DE1003E7846 /* DetailGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameView.swift; sourceTree = "<group>"; };
 		EA25A9BE28E1A543003E7846 /* DetailGameButtonMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameButtonMode.swift; sourceTree = "<group>"; };
 		EA318A5D28F80D29007097C1 /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
+		EA428ABC28F947E3004D5961 /* Profile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Profile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA428B1528FBB49A004D5961 /* Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4CE2EE28E014A000DD198E /* FavoriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewController.swift; sourceTree = "<group>"; };
 		EA4CE2F128E014B000DD198E /* FavoriteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewModel.swift; sourceTree = "<group>"; };
 		EA4CE2F328E014B700DD198E /* FavoriteListDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListDomain.swift; sourceTree = "<group>"; };
 		EA4CE2F628E0175C00DD198E /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
-		EA73515D28E2B2570000D4A2 /* ProfileViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewHeader.swift; sourceTree = "<group>"; };
 		EA73516528E2C2BF0000D4A2 /* TwoLabelInHorizontalStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoLabelInHorizontalStack.swift; sourceTree = "<group>"; };
-		EA73516828E2CBBD0000D4A2 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
-		EA73517528E2EE490000D4A2 /* ProfileEditLocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditLocalData.swift; sourceTree = "<group>"; };
-		EA73517728E2F0130000D4A2 /* ProfileEditDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditDomain.swift; sourceTree = "<group>"; };
-		EA73517928E2F0550000D4A2 /* ProfileEditRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditRepository.swift; sourceTree = "<group>"; };
 		EA73517C28E2F20E0000D4A2 /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
 		EA73517E28E2F21D0000D4A2 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
-		EA73518128E2F3530000D4A2 /* ProfileEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewModel.swift; sourceTree = "<group>"; };
-		EA73518328E2F4D70000D4A2 /* ProfileEditForkey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditForkey.swift; sourceTree = "<group>"; };
-		EA73518628E2F6080000D4A2 /* ProfileViewDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewDomain.swift; sourceTree = "<group>"; };
-		EA73518928E2F6520000D4A2 /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
-		EA73518B28E3188B0000D4A2 /* ProfileEditDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditDelegate.swift; sourceTree = "<group>"; };
-		EA73518D28E318A20000D4A2 /* ProfileEditState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditState.swift; sourceTree = "<group>"; };
-		EA73518F28E598890000D4A2 /* ProfileViewForKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewForKey.swift; sourceTree = "<group>"; };
 		EA82DF7A28EE72F800A1FEFC /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		EA82DF7C28EE730E00A1FEFC /* NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSLayoutConstraint.swift; sourceTree = "<group>"; };
 		EA82DF7E28EE73A300A1FEFC /* SafeAreaInset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaInset.swift; sourceTree = "<group>"; };
@@ -136,22 +121,10 @@
 		EA82DF8628EE7FFD00A1FEFC /* GameTrailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTrailer.swift; sourceTree = "<group>"; };
 		EA82DF8828EE891F00A1FEFC /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		EA82DF8A28EEDEAB00A1FEFC /* VideoEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEnum.swift; sourceTree = "<group>"; };
-		EAA3B1A128F7D12F00625535 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		EAA3B1A428F7D16100625535 /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
-		EAA3B1A628F7D17900625535 /* FadeAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimatedTransitioning.swift; sourceTree = "<group>"; };
-		EAA3B1AB28F7D1BC00625535 /* AnimatedTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransition.swift; sourceTree = "<group>"; };
-		EAA3B1AD28F7D1D200625535 /* EmptyTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTransition.swift; sourceTree = "<group>"; };
-		EAA3B1AF28F7D1DC00625535 /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
-		EAA3B1B128F7D1E800625535 /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
-		EAA3B1B328F7D1F200625535 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		EAA3B1B628F7D25900625535 /* UITabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabBarController.swift; sourceTree = "<group>"; };
-		EAA3B1B828F7DAC900625535 /* DefaultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRouter.swift; sourceTree = "<group>"; };
 		EAA3B1BA28F7DCBE00625535 /* HomeTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabRoute.swift; sourceTree = "<group>"; };
 		EAA3B1BC28F7E0EC00625535 /* FavoriteTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTabRoute.swift; sourceTree = "<group>"; };
-		EAA3B1BE28F7E26E00625535 /* ProfileTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabRoute.swift; sourceTree = "<group>"; };
-		EAA3B1CB28F7F34A00625535 /* EditProfileRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileRoute.swift; sourceTree = "<group>"; };
 		EAA3B1D028F7FB0600625535 /* DetailGameRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGameRoute.swift; sourceTree = "<group>"; };
-		EAA3B1D228F807A600625535 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		EAC6560328DD5C2200177037 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		EAC6560528DD648A00177037 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		EAC6560928DD668800177037 /* UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewDelegateFlowLayout.swift; sourceTree = "<group>"; };
@@ -171,6 +144,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA428ABD28F947E3004D5961 /* Profile.framework in Frameworks */,
+				EA428B1628FBB49A004D5961 /* Router.framework in Frameworks */,
 				05313BE2FEDECA67907FD743 /* Pods_RAWG.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +156,8 @@
 		279B26E847F12E4A64E24510 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA428B1528FBB49A004D5961 /* Router.framework */,
+				EA428ABC28F947E3004D5961 /* Profile.framework */,
 				9AF4FFA3C707C493E05C79FA /* Pods_RAWG.framework */,
 			);
 			name = Frameworks;
@@ -208,7 +185,6 @@
 			isa = PBXGroup;
 			children = (
 				EAA3B1B528F7D24700625535 /* TabBar */,
-				EAA3B1A028F7D12900625535 /* Router */,
 				EA73518028E2F2240000D4A2 /* Constant */,
 				EA73517B28E2F1F50000D4A2 /* Persistance */,
 				EA25A9BA28E1A005003E7846 /* Feature */,
@@ -323,33 +299,11 @@
 		EA25A9BA28E1A005003E7846 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
-				EA73516728E2CBB30000D4A2 /* EditProfile */,
-				EA25A9BC28E1A025003E7846 /* Profile */,
 				EAC6563628DD71BE00177037 /* Detail */,
 				EA4CE2ED28E0149500DD198E /* FavoriteList */,
 				6AB8FA9B28D07B1D005DBB85 /* Base */,
 			);
 			path = Feature;
-			sourceTree = "<group>";
-		};
-		EA25A9BC28E1A025003E7846 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				EA73518828E2F60D0000D4A2 /* Domain */,
-				EA73515F28E2B5070000D4A2 /* Data */,
-				EA25A9BD28E1A4FC003E7846 /* Presentation */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		EA25A9BD28E1A4FC003E7846 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				EA73515C28E2B24F0000D4A2 /* View */,
-				EA73518928E2F6520000D4A2 /* ProfileViewViewModel.swift */,
-				EAA3B1D228F807A600625535 /* ProfileViewController.swift */,
-			);
-			path = Presentation;
 			sourceTree = "<group>";
 		};
 		EA4CE2ED28E0149500DD198E /* FavoriteList */ = {
@@ -388,60 +342,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		EA73515C28E2B24F0000D4A2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				EA73515D28E2B2570000D4A2 /* ProfileViewHeader.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		EA73515F28E2B5070000D4A2 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				EA73518F28E598890000D4A2 /* ProfileViewForKey.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		EA73516728E2CBB30000D4A2 /* EditProfile */ = {
-			isa = PBXGroup;
-			children = (
-				EAA3B1CA28F7F34000625535 /* Route */,
-				EA73517028E2EE1C0000D4A2 /* Domain */,
-				EA73516F28E2EE160000D4A2 /* Presentation */,
-				EA73516E28E2EE0B0000D4A2 /* Data */,
-			);
-			path = EditProfile;
-			sourceTree = "<group>";
-		};
-		EA73516E28E2EE0B0000D4A2 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				EA73518528E2F4F70000D4A2 /* Model */,
-				EA73517528E2EE490000D4A2 /* ProfileEditLocalData.swift */,
-				EA73517928E2F0550000D4A2 /* ProfileEditRepository.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		EA73516F28E2EE160000D4A2 /* Presentation */ = {
-			isa = PBXGroup;
-			children = (
-				EA73516828E2CBBD0000D4A2 /* ProfileEditViewController.swift */,
-				EA73518128E2F3530000D4A2 /* ProfileEditViewModel.swift */,
-			);
-			path = Presentation;
-			sourceTree = "<group>";
-		};
-		EA73517028E2EE1C0000D4A2 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				EA73517728E2F0130000D4A2 /* ProfileEditDomain.swift */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		EA73517B28E2F1F50000D4A2 /* Persistance */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,24 +362,6 @@
 			path = Constant;
 			sourceTree = "<group>";
 		};
-		EA73518528E2F4F70000D4A2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				EA73518328E2F4D70000D4A2 /* ProfileEditForkey.swift */,
-				EA73518B28E3188B0000D4A2 /* ProfileEditDelegate.swift */,
-				EA73518D28E318A20000D4A2 /* ProfileEditState.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		EA73518828E2F60D0000D4A2 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				EA73518628E2F6080000D4A2 /* ProfileViewDomain.swift */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		EA82DF8228EE772100A1FEFC /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -496,55 +378,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		EAA3B1A028F7D12900625535 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				EAA3B1AA28F7D1AE00625535 /* Transitions */,
-				EAA3B1A328F7D15C00625535 /* Animator */,
-				EAA3B1A128F7D12F00625535 /* Router.swift */,
-				EAA3B1B828F7DAC900625535 /* DefaultRouter.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		EAA3B1A328F7D15C00625535 /* Animator */ = {
-			isa = PBXGroup;
-			children = (
-				EAA3B1A428F7D16100625535 /* AnimatedTransitioning.swift */,
-				EAA3B1A628F7D17900625535 /* FadeAnimatedTransitioning.swift */,
-			);
-			path = Animator;
-			sourceTree = "<group>";
-		};
-		EAA3B1AA28F7D1AE00625535 /* Transitions */ = {
-			isa = PBXGroup;
-			children = (
-				EAA3B1AB28F7D1BC00625535 /* AnimatedTransition.swift */,
-				EAA3B1AD28F7D1D200625535 /* EmptyTransition.swift */,
-				EAA3B1AF28F7D1DC00625535 /* ModalTransition.swift */,
-				EAA3B1B128F7D1E800625535 /* PushTransition.swift */,
-				EAA3B1B328F7D1F200625535 /* Transition.swift */,
-			);
-			path = Transitions;
-			sourceTree = "<group>";
-		};
 		EAA3B1B528F7D24700625535 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
 				EAA3B1B628F7D25900625535 /* UITabBarController.swift */,
 				EAA3B1BA28F7DCBE00625535 /* HomeTabRoute.swift */,
 				EAA3B1BC28F7E0EC00625535 /* FavoriteTabRoute.swift */,
-				EAA3B1BE28F7E26E00625535 /* ProfileTabRoute.swift */,
 			);
 			path = TabBar;
-			sourceTree = "<group>";
-		};
-		EAA3B1CA28F7F34000625535 /* Route */ = {
-			isa = PBXGroup;
-			children = (
-				EAA3B1CB28F7F34A00625535 /* EditProfileRoute.swift */,
-			);
-			path = Route;
 			sourceTree = "<group>";
 		};
 		EAA3B1CD28F7FAEF00625535 /* Route */ = {
@@ -628,6 +469,7 @@
 				6AB8FA6A28D069EC005DBB85 /* Resources */,
 				047A9D3F5C9093AD50E517D4 /* [CP] Embed Pods Frameworks */,
 				EAC6564B28DDB22D00177037 /* ShellScript */,
+				EA428ABF28F947E3004D5961 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -748,18 +590,11 @@
 			files = (
 				EAA3B1D128F7FB0600625535 /* DetailGameRoute.swift in Sources */,
 				EAA3B1BB28F7DCBE00625535 /* HomeTabRoute.swift in Sources */,
-				EA73518428E2F4D70000D4A2 /* ProfileEditForkey.swift in Sources */,
-				EAA3B1AC28F7D1BC00625535 /* AnimatedTransition.swift in Sources */,
 				EA4CE2EF28E014A000DD198E /* FavoriteListViewController.swift in Sources */,
 				EA25A9B428E16DA4003E7846 /* ScrollViewContainer.swift in Sources */,
 				EAC6560628DD648A00177037 /* UIView.swift in Sources */,
-				EA73519028E598890000D4A2 /* ProfileViewForKey.swift in Sources */,
-				EA73518728E2F6080000D4A2 /* ProfileViewDomain.swift in Sources */,
 				EAA3B1B728F7D25900625535 /* UITabBarController.swift in Sources */,
-				EAA3B1BF28F7E26E00625535 /* ProfileTabRoute.swift in Sources */,
 				EA25A9B628E16DE1003E7846 /* DetailGameView.swift in Sources */,
-				EAA3B1A528F7D16100625535 /* AnimatedTransitioning.swift in Sources */,
-				EA73517828E2F0130000D4A2 /* ProfileEditDomain.swift in Sources */,
 				EA73517D28E2F20E0000D4A2 /* ScreenSize.swift in Sources */,
 				EAC6565028DDBFB600177037 /* BaseLocalData.swift in Sources */,
 				6AB8FAA428D085EF005DBB85 /* Observable.swift in Sources */,
@@ -770,30 +605,17 @@
 				EA4CE2F428E014B700DD198E /* FavoriteListDomain.swift in Sources */,
 				EA82DF8728EE7FFD00A1FEFC /* GameTrailer.swift in Sources */,
 				6ACA136A28D1AD4100D71744 /* EmptyView.swift in Sources */,
-				EA73518E28E318A20000D4A2 /* ProfileEditState.swift in Sources */,
-				EAA3B1CC28F7F34A00625535 /* EditProfileRoute.swift in Sources */,
-				EAA3B1B228F7D1E800625535 /* PushTransition.swift in Sources */,
-				EAA3B1AE28F7D1D200625535 /* EmptyTransition.swift in Sources */,
-				EA73515E28E2B2570000D4A2 /* ProfileViewHeader.swift in Sources */,
-				EA73518228E2F3530000D4A2 /* ProfileEditViewModel.swift in Sources */,
 				EA82DF7F28EE73A300A1FEFC /* SafeAreaInset.swift in Sources */,
-				EA73517628E2EE490000D4A2 /* ProfileEditLocalData.swift in Sources */,
-				EAA3B1A228F7D12F00625535 /* Router.swift in Sources */,
 				EAA3B1BD28F7E0EC00625535 /* FavoriteTabRoute.swift in Sources */,
 				EA0FF1D828E82E8C004FF80B /* DefaultCollectionView.swift in Sources */,
 				EAC6564228DD7F5500177037 /* DetailGameViewModel.swift in Sources */,
 				6AB8FA9628D07AFC005DBB85 /* BaseDomain.swift in Sources */,
 				6ACA136C28D1B22C00D71744 /* GameResponse.swift in Sources */,
 				EA4CE2F828E0175C00DD198E /* FavoriteTableViewCell.swift in Sources */,
-				EAA3B1B928F7DAC900625535 /* DefaultRouter.swift in Sources */,
 				EAC6563828DD71C700177037 /* GameDetailResponse.swift in Sources */,
-				EAA3B1B028F7D1DC00625535 /* ModalTransition.swift in Sources */,
-				EAA3B1B428F7D1F200625535 /* Transition.swift in Sources */,
 				EA82DF8528EE772E00A1FEFC /* FavoriteModel.swift in Sources */,
 				EA82DF8B28EEDEAB00A1FEFC /* VideoEnum.swift in Sources */,
 				6AB8FA9A28D07B09005DBB85 /* BaseRemoteData.swift in Sources */,
-				EA73517A28E2F0550000D4A2 /* ProfileEditRepository.swift in Sources */,
-				EA73516928E2CBBD0000D4A2 /* ProfileEditViewController.swift in Sources */,
 				EA82DF8128EE766E00A1FEFC /* SWInflateLayout.swift in Sources */,
 				EA82DF8928EE891F00A1FEFC /* PlayerView.swift in Sources */,
 				6AB8FA9828D07B01005DBB85 /* BaseRepository.swift in Sources */,
@@ -805,12 +627,8 @@
 				EAC6560A28DD668800177037 /* UICollectionViewDelegateFlowLayout.swift in Sources */,
 				EAC6564428DD828300177037 /* DetailGameViewController.swift in Sources */,
 				6AB8FA7028D069EC005DBB85 /* AppDelegate.swift in Sources */,
-				EA73518A28E2F6520000D4A2 /* ProfileViewViewModel.swift in Sources */,
-				EA73518C28E3188B0000D4A2 /* ProfileEditDelegate.swift in Sources */,
 				EA4CE2F228E014B000DD198E /* FavoriteListViewModel.swift in Sources */,
 				EAC6564E28DDBCEE00177037 /* RAWG.xcdatamodeld in Sources */,
-				EAA3B1D328F807A600625535 /* ProfileViewController.swift in Sources */,
-				EAA3B1A728F7D17900625535 /* FadeAnimatedTransitioning.swift in Sources */,
 				6AB8FA9228D07ACF005DBB85 /* GameListHomeCollectionViewCell.swift in Sources */,
 				EA25A9BF28E1A543003E7846 /* DetailGameButtonMode.swift in Sources */,
 				EA318A5E28F80D29007097C1 /* SceneDelegateExtension.swift in Sources */,
