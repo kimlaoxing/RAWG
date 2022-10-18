@@ -18,15 +18,18 @@ final class DetailGameViewController: UIViewController {
     
     private lazy var vStack = UIStackView.make {
         $0.axis = .vertical
+        $0.top(to: view, Padding.double + safeAreaInset.top + Padding.half)
+        $0.bottom(to: view, Padding.double)
+        $0.horizontalPadding(to: view)
     }
     
     private lazy var container = UIView.make {
-        $0.height(ScreenSize.height * 0.08)
+        $0.height(Padding.NORMAL_CONTENT_INSET)
     }
     
     private lazy var addToFavoriteButton = UIButton.make {
-        $0.verticalPadding(to: container, Padding.half)
-        $0.horizontalPadding(to: container, Padding.reguler)
+        $0.verticalPadding(to: container)
+        $0.horizontalPadding(to: container)
         $0.layer.cornerRadius = 15
         $0.titleLabel?.font = .systemFont(ofSize: 14, weight: .semibold)
     }
@@ -75,7 +78,6 @@ final class DetailGameViewController: UIViewController {
                 ])
             ])
         ])
-        layout()
     }
     
     private func updateContent(with data: GameDetailResponse) {
@@ -127,14 +129,5 @@ final class DetailGameViewController: UIViewController {
             addToFavoriteButton.backgroundColor = .gray
             addToFavoriteButton.addTarget(self, action: #selector(saveButton), for: .touchUpInside)
         }
-    }
-    
-    private func layout() {
-        NSLayoutConstraint.activate([
-            vStack.topAnchor.constraint(equalTo: view.topAnchor, constant: Padding.double + safeAreaInset.top + Padding.half),
-            vStack.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            vStack.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            vStack.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
     }
 }
