@@ -5,29 +5,24 @@ use_frameworks!
 
 workspace 'RAWG'
 
-#profile module
-def profile_pods
-pod 'Declayout'
+def core_pods
 pod 'Toast-Swift', '~> 5.0.1'
 pod 'SwiftLint'
+pod 'Declayout'
+pod 'Alamofire'
 end
 
 target 'Profile' do
 project 'Profile/Profile.project'
-profile_pods
+core_pods
 end
 
 target 'Router' do
 project 'Router/Router.project'
 end
 
-#RAWG module
-pod 'Declayout'
-pod 'Alamofire'
-pod 'Toast-Swift', '~> 5.0.1'
-pod 'SwiftLint'
-
 target 'RAWG' do
 project 'RAWG.project'
+core_pods
 end
 
