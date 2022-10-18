@@ -17,6 +17,9 @@ project 'Profile/Profile.project'
 profile_pods
 end
 
+target 'Router' do
+project 'Router/Router.project'
+end
 
 #RAWG module
 pod 'Declayout'

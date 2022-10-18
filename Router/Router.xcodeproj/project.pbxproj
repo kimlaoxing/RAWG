@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C35E2DAE2242086E751172B /* Pods_Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB12CBE6C49C03AFB3BA5B92 /* Pods_Router.framework */; };
 		EA428B0F28FBB451004D5961 /* Router.h in Headers */ = {isa = PBXBuildFile; fileRef = EA428B0E28FBB451004D5961 /* Router.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA428B1D28FBB4B8004D5961 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA428B1C28FBB4B8004D5961 /* Router.swift */; };
 		EA428B1F28FBB4C1004D5961 /* DefaultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA428B1E28FBB4C1004D5961 /* DefaultRouter.swift */; };
@@ -20,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9791E2A02127225CBE7E4562 /* Pods-Router.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Router.release.xcconfig"; path = "Target Support Files/Pods-Router/Pods-Router.release.xcconfig"; sourceTree = "<group>"; };
+		B727CD8DC392D653DE747F69 /* Pods-Router.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Router.debug.xcconfig"; path = "Target Support Files/Pods-Router/Pods-Router.debug.xcconfig"; sourceTree = "<group>"; };
 		EA428B0B28FBB451004D5961 /* Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA428B0E28FBB451004D5961 /* Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		EA428B1C28FBB4B8004D5961 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		EA428B2A28FBB55F004D5961 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		EA428B2C28FBB56F004D5961 /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
 		EA428B2E28FBB576004D5961 /* FadeAnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		EB12CBE6C49C03AFB3BA5B92 /* Pods_Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,17 +42,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C35E2DAE2242086E751172B /* Pods_Router.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		423DFCE211701D191322A3DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB12CBE6C49C03AFB3BA5B92 /* Pods_Router.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E57887CA4922BBF3633E9180 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B727CD8DC392D653DE747F69 /* Pods-Router.debug.xcconfig */,
+				9791E2A02127225CBE7E4562 /* Pods-Router.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		EA428B0128FBB451004D5961 = {
 			isa = PBXGroup;
 			children = (
 				EA428B0D28FBB451004D5961 /* Router */,
 				EA428B0C28FBB451004D5961 /* Products */,
+				E57887CA4922BBF3633E9180 /* Pods */,
+				423DFCE211701D191322A3DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +136,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA428B1228FBB451004D5961 /* Build configuration list for PBXNativeTarget "Router" */;
 			buildPhases = (
+				A9A1F7E6F936E2D90ED50520 /* [CP] Check Pods Manifest.lock */,
 				EA428B0628FBB451004D5961 /* Headers */,
 				EA428B0728FBB451004D5961 /* Sources */,
 				EA428B0828FBB451004D5961 /* Frameworks */,
@@ -167,6 +193,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A9A1F7E6F936E2D90ED50520 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Router-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA428B0728FBB451004D5961 /* Sources */ = {
@@ -312,6 +363,7 @@
 		};
 		EA428B1328FBB451004D5961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B727CD8DC392D653DE747F69 /* Pods-Router.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -342,6 +394,7 @@
 		};
 		EA428B1428FBB451004D5961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9791E2A02127225CBE7E4562 /* Pods-Router.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

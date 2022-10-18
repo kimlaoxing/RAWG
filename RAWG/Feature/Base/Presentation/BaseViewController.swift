@@ -144,6 +144,17 @@ final class BaseViewController: UIViewController {
             }
         }
     }
+    
+    private func switchVideoEnum(with cell: GameListCarouCell) {
+        switch self.videoEnum {
+        case .willAppear:
+            cell.playVideo()
+        case .willDisappear:
+            cell.stopVideo()
+        case .none:
+            break
+        }
+    }
 }
 
 extension BaseViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
@@ -190,14 +201,7 @@ extension BaseViewController: UICollectionViewDelegateFlowLayout, UICollectionVi
                 if let cellRect = (collectionView.layoutAttributesForItem(at: indexPath)?.frame) {
                     let completelyVisible = collectionView.bounds.contains(cellRect)
                     if completelyVisible {
-                        switch self.videoEnum {
-                        case .willAppear:
-                            cell.playVideo()
-                        case .willDisappear:
-                            cell.stopVideo()
-                        case .none:
-                            break
-                        }
+                        self.switchVideoEnum(with: cell)
                     }
                 }
             }
